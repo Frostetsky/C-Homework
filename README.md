@@ -90,14 +90,14 @@ class HelloWorld {
   
   static int[] generateArray() {
       Random random = new Random();
-	  int[] values = new int[8];
+      int[] values = new int[8];
 
-	  for (int i = 0; i < 8; i++) {
-		values[i] = random.Next();
-		Console.WriteLine("generateValue in Array is - " + values[i]);
-	  }
+      for (int i = 0; i < 8; i++) {
+ 	 values[i] = random.Next();
+	Console.WriteLine("generateValue in Array is - " + values[i]);
+      }
 
-	  return values;
+      return values;
   }
 }
 ```
