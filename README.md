@@ -124,7 +124,6 @@ class Program {
             if (discriminant == 0) //квадратное уравнение имеет 1 решение
             {
                 x1 = -b / (2 * a);
-                x2 = x1;
                 Console.WriteLine($"x1 = {x1}");
             } else { 
 	    	// уравнение имеет два корня
