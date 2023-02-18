@@ -101,3 +101,39 @@ class HelloWorld {
   }
 }
 ```
+
+Решить квадратное уравнение
+```csharp
+using System;
+using System.Text;
+
+class Program {
+    static void Main(){
+        
+        // Квадратное уравнение имеет вид - ax^2 + bx + c = 0
+        
+        double a = 1;
+        double b = 4;
+        double c = 4;
+
+        double x1, x2;
+        var discriminant = Math.Pow(b, 2) - 4 * a * c;
+        if (discriminant < 0) {
+            Console.WriteLine("Квадратное уравнение не имеет корней");
+        } else {
+            if (discriminant == 0) //квадратное уравнение имеет два одинаковых корня
+            {
+                x1 = -b / (2 * a);
+                x2 = x1;
+                Console.WriteLine($"x1 = {x1}");
+            }
+            else //уравнение имеет два разных корня
+            {
+                x1 = (-b + Math.Sqrt(discriminant)) / (2 * a);
+                x2 = (-b - Math.Sqrt(discriminant)) / (2 * a);
+                Console.WriteLine($"x1 = {x1}; x2 = {x2}");
+            }
+        }
+    }
+}
+```
