@@ -76,3 +76,28 @@ class HelloWorld {
   }
 }
 ```
+Найти минимальное число из массива состоящих из 8 чисел
+
+```csharp
+using System;
+using System.Linq;
+
+class HelloWorld {
+  static void Main() {
+    int[] randomArray = generateArray();
+    Console.WriteLine("Min is - " + randomArray.Min());
+  }
+  
+  static int[] generateArray() {
+      Random random = new Random();
+	  int[] values = new int[8];
+
+	  for (int i = 0; i < 8; i++) {
+		values[i] = random.Next();
+		Console.WriteLine("generateValue in Array is - " + values[i]);
+	  }
+
+	  return values;
+  }
+}
+```
