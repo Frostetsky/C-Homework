@@ -51,3 +51,28 @@ class HelloWorld {
   }
 }
 ```
+
+Заменить все точки на многоточие
+
+```csharp
+using System;
+
+class HelloWorld {
+  static void Main() {
+    string param = "..."; // можно ввести любой параметр, не только троеточие
+    string paramToChange = "."; // можно ввести любой параметр для замены
+    
+    string randomStringFirst = "aklfj.uaidhuiahd.ahduiashd.";
+    string randomStringSecond = "dsfmlksadfkl..asdasd...sadasdsa";
+    string randomStringThird = "";
+    string randomStringFourth = "fdasfdsa";
+    string randomStringFifth = "...";
+    
+    string[] strings = {randomStringFirst, randomStringSecond, randomStringThird, randomStringFourth, randomStringFifth};
+    
+    foreach (string stringValue in strings) {
+        Console.WriteLine(stringValue.Replace(paramToChange, param));
+    }
+  }
+}
+```
