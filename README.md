@@ -179,3 +179,28 @@ class HelloWorld {
   }
 }
 ```
+
+Запрашивать у пользователя числа и выводить по условию
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        while (true) {  
+        Console.WriteLine("Введите целое число");
+        
+        int c = int.Parse(Console.ReadLine());
+        
+        bool firstBool = c % 2 == 0;
+        bool secondBool = c % 3 == 0;
+        bool thirdBool = firstBool && secondBool;
+        
+        if ((firstBool || secondBool) && !(thirdBool)) {
+            Console.WriteLine("Данное число делится либо на 2, либо на 3, но не делится одновременно на 2 и на 3. Число - " + c);
+        } else {
+            Console.WriteLine("Данное число нам не подходит.");
+        }
+    }
+  }
+}
+```
