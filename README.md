@@ -121,14 +121,13 @@ class Program {
         if (discriminant < 0) {
             Console.WriteLine("Квадратное уравнение не имеет корней");
         } else {
-            if (discriminant == 0) //квадратное уравнение имеет два одинаковых корня
+            if (discriminant == 0) //квадратное уравнение имеет 1 решение
             {
                 x1 = -b / (2 * a);
                 x2 = x1;
                 Console.WriteLine($"x1 = {x1}");
-            }
-            else //уравнение имеет два разных корня
-            {
+            } else { 
+	    	// уравнение имеет два корня
                 x1 = (-b + Math.Sqrt(discriminant)) / (2 * a);
                 x2 = (-b - Math.Sqrt(discriminant)) / (2 * a);
                 Console.WriteLine($"x1 = {x1}; x2 = {x2}");
