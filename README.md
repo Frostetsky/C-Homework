@@ -94,7 +94,7 @@ class HelloWorld {
 
       for (int i = 0; i < 8; i++) {
  	 values[i] = random.Next();
-	Console.WriteLine("generateValue in Array is - " + values[i]);
+	 Console.WriteLine("generateValue in Array is - " + values[i]);
       }
 
       return values;
